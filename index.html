@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Let's Talk | App</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+ 
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <!-- =====BOX ICONS===== -->
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link rel="stylesheet" href="assets/css/coreui.min.css">
+
+</head>
+<body>
+  <header class="l-header">
+    <nav class="nav bd-grid">
+        <div>
+            <a href="#" class="nav__logo">Let's Talk</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#batho" class="nav__link">Batho Pele Principles</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
+</header>
+
+<main class="l-main">
+    <!--===== HOME =====-->
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    
+
+    <section class="home bd-grid" id="home">
+        <div class="home__data">
+            <h1 class="home__title">One Citizens, <br>One Government,<br> <span class="home__title-color">One Solution</span>.</h1>
+
+            <p class="slogan home__title-color">Lets Talk gives us "<span class="slogan-color">HOPE</span>"</p>
+            <br>
+            <a href="#" class="button"  data-toggle="modal" data-target="#exampleModal">Request Demo</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Request a Demo</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form method="POST" id="demoForm">
+                            <div class="form-group">
+                                <div class="alert">Your message has been sent</div>
+                              <label for="recipient-name" class="col-form-label">Name</label>
+                              <input type="text" class="form-control" name="namesender" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Email</label>
+                                <input type="text" name="emailsender" class="form-control" id="email">
+                              </div>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Company:</label>
+                                <input type="text" class="form-control" name="company" id="company">
+                              </div>
+                            <div class="form-group">
+                              <label for="message-text" class="col-form-label">Message:</label>
+                              <textarea class="form-control" id="messagesender"></textarea>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn1 btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn1 btn-success">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="home__social">
+            
+            <!--a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+            <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a-->
+               
+        </div>
+
+        <div class="home__img">    
+            <img src="assets/img/test1.png" alt="">
+        </div>
+    </section>
+
+    <!--===== ABOUT =====-->
+    <section class="about section " id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="assets/img/img1.png" width="640" height="841" alt="">
+            </div>
+            
+            <div>
+                <h2 class="about__subtitle">Let's Talk</h2>
+                <p class="about__text">Let’s Talk App is citizen progress update mobile system which helps the local and provincial government reach the Batho Pele Principles that all the projects must be completed in time and handed over to the rightful communities and citizens</p>           
+                <br><br><br><br>
+                <a onclick="popupToggle();" class="button">Subscribe</a>
+                
+                
+
+                <div id="popup" class="modal">
+                    <div class="content">
+                       
+                        <h2>Subscribe to our Newsletter</h2>
+                        <p>email subscription</p>
+                        <form action="">
+                            <div class="inputBox">
+                                <input type="email" name="" placeholder="Enter your email" id="">
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" class="" value="Subscribe">
+                            </div>
+                        </form>
+                        
+                        
+                        
+                    </div>
+                    <a onclick="popupToggle();" class="close"><img src="assets/img/close.jpg" alt="" srcset=""></a>
+                </div>
+                <br><br><br>
+                <div class="home__social">
+                    <!--a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a-->
+                        <div class ="frame">
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                          <i class="fab fa-twitter" style="color: #00acee;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-get-pocket" style="color:#ee4056;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="far fa-envelope"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>                                   
+        </div>
+        
+    </section>
+
+    <!--===== SKILLS =====-->
+    <section class="skills section" id="batho">
+        <h2 class="section-title">Batho Pele
+            Principles</h2>
+
+        <div class="skills__container bd-grid">          
+            <div>
+                <h2 class="skills__subtitle">Batho Pele
+                    Principles</h2>
+                <p class="skills__text">With Let’s Talk Batho Pele app enables digital communication of all communities citizens, youth, women, informal traders and SMEs to apply for a service, request, report, alter and be informed at the comfort of your home, school and work on all private, public sectors local, provincial and national individual and communal Back2Basics services</p>
+                <!--p class="skills__text">Let’s Talk will help our government reach the Batho Pele Principles that all the projects must be completed in time and handed over to the rightful communities and citizens. Helping us to achieve one of the 17 UN Sustainable Development Goals, number 16 - peace, justice and strong institutions.</p-->
+               
+               
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">User Friendly & Interactive</span>
+                    </div>
+                    <div class="skills__bar skills__html">
+
+                    </div>
+                    <div>
+                        <span class="skills__percentage"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">Security</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+                <!--div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">Interactive</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div-->
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">Top 15 Global UN Innovation Award Winner</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage"><i class="fas fa-eye"></i></span>
+                    </div>
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">The Long Journey to Innovation</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    <div>
+                        <span class="skills__percentage"><a href="https://www.za.undp.org/content/south_africa/en/home/blog/2019/long-journey-to-innovation.html"><i class="fas fa-eye"> visit</i></a></span>
+                    </div>
+                </div>
+               
+            </div>
+            
+            <div>              
+                <img src="assets/img/bg.jpg" alt="" class="skills__img">
+            </div>
+        </div>
+    </section>
+    <section class="contact section" id="work">
+        <h2 class="section-title"></h2>
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6SO1n27p5ho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            
+            <div>
+                <div id="popup" class="modal">
+                    <div class="content">
+                       
+                        <h2>Subscribe to our Newsletter</h2>
+                        <p>email subscription</p>
+                        <form action="">
+                            <div class="inputBox">
+                                <input type="email" name="" placeholder="Enter your email" id="">
+                            </div>
+                            <div class="inputBox">
+                                <input type="submit" class="" value="Subscribe">
+                            </div>
+                        </form>
+                        
+                        
+                        
+                    </div>
+                    <a onclick="popupToggle();" class="close"><img src="assets/img/close.jpg" alt="" srcset=""></a>
+                </div>
+                <br><br><br>
+                <div class="home__social">
+                    <!--a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                    <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a-->
+                        <div class ="frame">
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-facebook-f" style="color: #3b5998;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                          <i class="fab fa-twitter" style="color: #00acee;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-dribbble" style="color: #ea4c89;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-linkedin-in" style="color:#0e76a8;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="fab fa-get-pocket" style="color:#ee4056;"></i>
+                        </a>
+                            <a href="#" class="btn home__social-icon">
+                         <i class="far fa-envelope"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>                                   
+        </div>
+        
+        
+    </section>
+    <!--===== WORK =====-->
+    <section class="work section" id="work">
+        <h2 class="section-title">Our Mobile App</h2>
+
+        <div class="work__container bd-grid">
+            <div class="work__img center" >
+                <img src="assets/img/img1.png" alt="" width="177" height="313">
+            </div>
+            <div class="work__img">
+                <img src="assets/img/img2.png" alt=""  width="177" height="313">
+            </div>
+            <div class="work__img">
+                <img src="assets/img/img3.png" alt=""  width="177" height="313">
+            </div>
+            <div class="work__img">
+                <img src="assets/img/img4.png" alt="" width="177" height="313">
+            </div>
+            <div class="work__img">
+                <img src="assets/img/img5.png" alt=""  width="177" height="313">
+            </div>
+            <!--div class="work__img">
+                <img src="assets/img/bgg.jpg" alt="">
+            </div-->
+        </div>
+    </section>
+
+    
+
+    <!--===== CONTACT =====-->
+    <section class="contact section" id="contact">
+        <h2 class="section-title">Let's Keep in touch</h2>
+
+        <!--div class="contact__container bd-grid">
+            <form action="" class="contact__form">
+                <input type="text" placeholder="Name" class="contact__input">
+                <input type="mail" placeholder="Email" class="contact__input">
+                <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                <input type="button" value="Submit" class="contact__button button">
+            </form>
+        </div-->
+        <div class="contact-container bd-grid"> 
+        <div class="contact-left">
+            <h2>Fill in the Form</h2>
+            <form  method="POST" id="contactForm" class="contact-form">
+              <div class="alert">Your message has been sent</div>
+                <div class="single-row">
+                    <input type="text" name="name" id="name" placeholder="First Name" class="form-in mr">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" class="form-in ml">
+                </div>
+                <div class="multiple-row">
+                    <input type="text" name="email" id="email" placeholder="Email" class="form-in">
+                    <input type="text" name="phone" id="phone" placeholder="Phone" class="form-in">
+       
+                    <textarea placeholder="Your Message" class="form-in" name="message" id="message" cols="30" rows="10"></textarea>
+                    <button class="btn1" type="submit"> <label for="submit"><i class="fas fa-paper-plane"></i></label> </button>
+                </div>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"> +27712377269</i></p>
+                <p><i class="fas fa-envelope"> info@letstalk.net.za</i></p>
+                <p><i class="fas fa-map-marked-alt"> Address: 41 Juta Street, Tshimologong Precinct Braamfontein Johannesburg South Africa</i></p>
+            </div>
+        </div>
+        </div>
+    </section>
+</main>
+<template id="my-template">
+    <swal-title>
+      Save changes to "Untitled 1" before closing?
+    </swal-title>
+    <swal-icon type="warning" color="red"></swal-icon>
+    <swal-button type="confirm">
+      Save As
+    </swal-button>
+    <swal-button type="cancel">
+      Cancel
+    </swal-button>
+    <swal-button type="deny">
+      Close without Saving
+    </swal-button>
+    <swal-param name="allowEscapeKey" value="false" />
+    <swal-param
+      name="customClass"
+      value='{ "popup": "my-popup" }' />
+  </template>
+<!--===== FOOTER =====-->
+<!--footer class="footer">
+    <p class="footer__title">Marlon</p>
+    <div class="footer__social">
+        <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+        <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+    </div>
+    <p>&#169; 2020 copyright all right reserved</p>
+</footer-->
+
+<footer class="footer-end">
+   <div class="footer-end2">
+        
+    <p>&#169; 2021 copyright all right reserved</p>
+   </div>
+
+</footer>
+  <!--div class="container">
+    <h1 class="brand"><span>Acme</span> Web Design</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Acme Web Design</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> 44 Something st</li>
+          <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+          <li><i class="fa fa-envelope"></i> test@acme.test</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div-->
+
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="main.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+      $(document).ready(function(){
+          $('.chat_icon').click(function(event){
+              $('.chat_box').toggleClass('active');
+            });
+        })
+  </script>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main-js.js"></script>
+        <script src="assets/js/aapy.js"></script>
+        <script>
+          function popupToggle(){
+              const popup = document.getElementById('popup');
+              popup.classList.toggle('active-pop')
+          }
+      </script>
+      <script src="assets/js/jquery-1.12.3.min.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script src="//cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.min.js"></script>
+<script src="https://unpkg.com/@coreui/coreui/dist/js/coreui.bundle.min.js"></script>
+</body>
+</html>
